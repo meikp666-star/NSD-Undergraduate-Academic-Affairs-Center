@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="generator" content="问卷合集-成品版">
+<title>测试1553</title>
+<style>
+:root{--brand:#1a6dff;--brand-dark:#0f5bdd;--ink:#1f2329;--sub:#6b7280;--mute:#9aa1ac;--line:#e8ebef;--line-soft:#eef0f3;--bg:#f0f2f5;--win-blue:#5b93dd;--win-green:#3bb56b;--radius:14px;--frame-h:72vh;--iframe-h:200px;--topbar-h:56px;--shadow:0 4px 18px rgba(0,0,0,.06)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;color:var(--ink);background:radial-gradient(1100px 480px at 50% -180px,#e5efff 0%,rgba(229,239,255,0) 70%),var(--bg);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;scroll-behavior:smooth}
+button{font-family:inherit}
+.topbar{position:sticky;top:0;z-index:200;display:flex;align-items:center;gap:10px;height:var(--topbar-h);padding:0 16px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.topbar .brand{font-size:15px;font-weight:700;white-space:nowrap}
+.topbar .nav{display:flex;gap:6px;margin-left:auto;overflow-x:auto;scrollbar-width:none;padding:2px;max-width:62%}
+.topbar .nav::-webkit-scrollbar{display:none}
+.topbar .nav a{font-size:13px;text-decoration:none;color:var(--ink);padding:6px 13px;border-radius:999px;background:#eef0f3;transition:background .15s,color .15s;white-space:nowrap}
+.topbar .nav a:hover,.topbar .nav a.active{background:var(--brand);color:#fff}
+.wrap{width:calc(100% - 32px);max-width:1000px;margin:0 auto;padding-bottom:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.hero{margin:24px auto 0;padding:26px 22px;text-align:center;background:linear-gradient(180deg,#ffffff,#f7faff);border:1px solid #e2ecff}
+.hero h1{margin:0 0 6px;font-size:20px}
+.hero p{margin:0;color:var(--sub);font-size:13px;line-height:1.75;white-space:pre-line}
+.overview{margin-top:18px;padding:4px;border:3.5px solid var(--win-blue)}
+.overview .ov-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--win-blue-line);background:linear-gradient(180deg,#f2f7ff,#e3eeff)}
+.overview .ov-head .t{font-size:15px;font-weight:700}
+.overview .ov-head .c{font-size:12px;color:var(--brand);background:#eef4ff;padding:2px 9px;border-radius:999px;font-weight:600}
+.overview .ov-head .sp{flex:1}
+.overview .ov-list{padding:8px}
+.ov-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;text-decoration:none;color:inherit;cursor:default;border-bottom:1px dashed #e6eefc}
+.ov-item .idx{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.ov-item .info{min-width:0;flex:1}
+.ov-item .tt{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+.ov-item .uu{font-size:11.5px;color:var(--mute);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+.ov-item .go{flex:0 0 auto;color:var(--brand);font-size:12px;opacity:.75}
+.survey-block{background:#fff;border:3.5px solid var(--win-blue);border-radius:var(--radius);margin:26px auto 30px;width:100%;box-shadow:0 10px 30px rgba(24,39,75,.10),0 2px 6px rgba(24,39,75,.06);overflow:hidden;scroll-margin-top:calc(var(--topbar-h) + 14px)}
+.sh{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--win-blue-line);background:linear-gradient(180deg,#f2f7ff,#e6f0ff)}
+.sh .num{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,#3b82f6,#1a6dff);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(26,109,255,.35)}
+.sh .meta{min-width:0;flex:1}
+.sh .title{font-size:15.5px;font-weight:800;color:#123a6b;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sh .src{font-size:11.5px;color:#5b7cae;margin-top:3px}
+.scroll-note{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;padding:7px 14px;font-size:12px;color:var(--mute);background:#f7faff;border-bottom:1px solid #e3edfb}
+.scroll-note .arrow{display:inline-block;animation:nudge 1.4s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+.frame-wrap{position:relative;background:#fff;overflow:hidden}
+.frame-wrap iframe{display:block;width:100%;border:0;height:var(--iframe-h);min-height:460px;transition:height .2s ease;touch-action:pan-y;background:#fff}
+.survey-block.expanded .frame-wrap iframe{height:var(--iframe-h)}
+.fallback{display:none;padding:40px 22px;text-align:center;color:var(--sub);font-size:14px;line-height:1.9}
+.finish-box{position:relative;margin:26px auto 0;padding:34px 26px 30px;text-align:center;background:linear-gradient(160deg,#ffffff 0%,#f4f8ff 55%,#eaf3ff 100%);border:1px solid #d6e6ff;border-radius:24px;box-shadow:0 18px 50px rgba(26,109,255,.13),0 2px 6px rgba(0,0,0,.04);overflow:hidden}
+.finish-box::before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#1a6dff,#3b82f6,#22c55e)}
+.finish-box::after{content:"";position:absolute;width:320px;height:320px;right:-140px;top:-160px;background:radial-gradient(circle,rgba(59,130,246,.16),transparent 70%);border-radius:50%;pointer-events:none}
+.finish-box .fb-badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--brand);background:#eaf2ff;border:1px solid #cfe2ff;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.finish-box .fb-title{font-size:24px;font-weight:900;color:var(--ink);margin-bottom:10px;letter-spacing:.5px}
+.finish-box .fb-desc{font-size:14px;color:var(--sub);line-height:1.85;margin:0 auto 22px;max-width:460px}
+.finish-box .fb-btn{position:relative;display:inline-flex;align-items:center;gap:10px;font-size:17px;font-weight:800;letter-spacing:.5px;padding:17px 42px;border-radius:16px;cursor:pointer;border:none;color:#fff;background:linear-gradient(135deg,#16a34a,#22c55e 60%,#34d17a);box-shadow:0 12px 30px rgba(22,163,74,.42),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .18s,box-shadow .18s;overflow:hidden}
+.finish-box .fb-btn::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 2.8s ease-in-out infinite}
+@keyframes shine{0%{left:-120%}55%{left:130%}100%{left:130%}}
+.finish-box .fb-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(22,163,74,.55)}
+.finish-box .fb-btn.waiting{background:linear-gradient(135deg,#b8bec9,#cdd3dc);box-shadow:none;cursor:not-allowed}
+.finish-box .fb-btn.waiting::after{display:none}
+.finish-box .fb-tip{font-size:12.5px;color:var(--mute);margin-top:14px}
+.finish-box.all-done{background:linear-gradient(160deg,#ffffff 0%,#f2fdf7 55%,#e6fbef 100%);border-color:#b9ecd0;box-shadow:0 18px 50px rgba(22,163,74,.16),0 2px 6px rgba(0,0,0,.04)}
+.finish-box.all-done::before{background:linear-gradient(90deg,#16a34a,#22c55e,#7ee2a8)}
+.finish-box.all-done .fb-badge{color:#0b6b3a;background:#e8faf0;border-color:#b6eccf}
+.finish-box.all-done .fb-title{color:#0b6b3a}
+.submit-alert{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:10px 16px;background:linear-gradient(90deg,#fff4e5,#ffe9cc);border-top:2px dashed #f5a623;border-bottom:1px solid #ffd79a;font-size:13px;color:#a05a00;font-weight:600;line-height:1.5}
+.submit-alert .sa-ico{flex:0 0 auto;font-size:17px;line-height:1;animation:sa-blink 1.3s ease-in-out infinite}
+@keyframes sa-blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.18)}}
+.submit-alert .sa-txt{flex:1;min-width:0}
+.submit-alert b{color:#d9480f;background:#fff;padding:1px 7px;border-radius:6px;box-shadow:0 0 0 1.5px #ffb26b inset;margin:0 2px}
+.survey-block.done .submit-alert{display:none}
+.sfoot{display:flex;align-items:center;justify-content:flex-start;gap:10px;padding:10px 16px;background:#fafbfc;border-top:1px solid var(--line-soft);font-size:12px;color:var(--mute)}
+
+.btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:8px 14px;border-radius:9px;border:1px solid var(--line);background:#fff;color:#3f4652;cursor:pointer;transition:all .15s;white-space:nowrap}
+.btn:hover{border-color:var(--brand);color:var(--brand)}
+.btn.sm{font-size:12px;padding:6px 10px;border-radius:8px}
+.sfoot{flex-wrap:wrap}
+.sfoot .done-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:9px 18px;border-radius:10px;cursor:pointer;border:2px solid #1a6dff;background:#1a6dff;color:#fff;transition:all .18s;box-shadow:0 3px 12px rgba(26,109,255,.32)}
+.sfoot .done-btn:hover{background:#0f5bdd;border-color:#0f5bdd;transform:translateY(-1px)}
+.survey-block.done{border-color:var(--win-green);box-shadow:0 10px 30px rgba(22,163,74,.16), 0 2px 6px rgba(22,163,74,.08)}
+.survey-block.done .sh{background:linear-gradient(180deg,#eafaf0,#dff6e8);border-bottom-color:#b6e6c9}
+.survey-block.done .sh .num{background:#16a34a}
+.survey-block.done .sh .title::after{content:"✓ 已完成";margin-left:10px;font-size:12px;font-weight:700;color:#fff;background:#16a34a;border:none;padding:2px 10px;border-radius:999px;vertical-align:middle}
+.survey-block.done .sfoot .done-btn{background:#16a34a;border-color:#16a34a;color:#fff;font-weight:700;box-shadow:0 3px 12px rgba(22,163,74,.32)}
+.progress{position:sticky;top:var(--topbar-h);z-index:190;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:10px;padding:9px 16px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));border-radius:0;background:linear-gradient(90deg,#1a6dff,#3b82f6);box-shadow:0 3px 14px rgba(26,109,255,.3);color:#fff;width:100%;box-sizing:border-box}
+.progress .ptext{font-weight:800;color:#fff;white-space:nowrap;flex:0 0 auto;font-size:12.5px;text-align:center;line-height:1.25}
+.progress .ptext b{font-size:16px}
+.progress .psegs{display:flex;flex-direction:row;gap:6px;width:auto;flex:0 1 auto;max-width:72vw;overflow-x:auto;scrollbar-width:none}
+.progress .seg{position:relative;height:22px;min-width:26px;padding:0 7px;border-radius:7px;background:rgba(255,255,255,.22);border:1.5px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:800;color:rgba(255,255,255,.85);transition:all .3s ease}
+.progress .seg.on{background:linear-gradient(90deg,#a7f3c9,#34d17a);border-color:#eafff3;color:#0b6b3a;box-shadow:0 0 10px rgba(52,209,122,.75)}
+.progress .seg.on::after{content:"✓";position:absolute;right:5px;top:2px;font-size:10px;color:#0b6b3a}
+.progress.all-done{background:linear-gradient(180deg,#16a34a,#22c55e)}
+.progress.all-done .seg.on{background:linear-gradient(90deg,#d9fbe8,#fff);box-shadow:0 0 12px rgba(255,255,255,.9)}
+@media (max-width:720px){.progress{position:sticky;top:var(--topbar-h);z-index:195;transform:none;margin:0;flex-direction:row;align-items:center;justify-content:center;gap:8px;width:auto;padding:8px 12px;border-radius:0;box-shadow:0 3px 12px rgba(26,109,255,.28)}.progress .ptext{font-size:11px}.ptext b{font-size:13px}.progress .ptext b{font-size:13px}.progress .psegs{flex-direction:row;gap:5px;width:auto;flex:0 1 auto;max-width:64vw;overflow-x:auto}.progress .seg{height:22px;min-width:26px;padding:0 5px;font-size:11px;border-radius:7px}.progress .seg.on{transform:none}.progress .seg.on::after{content:"✓";right:2px;top:0;font-size:8px}body{padding-left:0 !important}.topbar{padding-left:max(16px,env(safe-area-inset-left)) !important}.survey-block{scroll-margin-top:calc(var(--topbar-h) + 52px);margin:20px auto 24px}}
+.resume-tip{display:none;align-items:center;gap:10px;flex-wrap:wrap;margin:14px auto 0;padding:12px 16px;font-size:13px;color:#0b5cad;background:#eef6ff;border:1px solid #c3ddff;border-radius:12px}
+.resume-tip.show{display:flex}
+.resume-tip .sp{flex:1}
+.resume-tip button{font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid #a9cbff;background:#fff;color:#0b5cad;cursor:pointer;white-space:nowrap}
+.resume-tip button:hover{background:#0b5cad;color:#fff;border-color:#0b5cad}
+.resume-mask{position:fixed;inset:0;z-index:600;background:rgba(15,20,32,.55);display:none;align-items:center;justify-content:center;padding:18px;-webkit-backdrop-filter:blur(8px) saturate(120%);backdrop-filter:blur(8px) saturate(120%)}
+.resume-mask.show{display:flex;animation:maskIn .22s ease}
+@keyframes maskIn{from{opacity:0}to{opacity:1}}
+.resume-card{width:100%;max-width:430px;background:#fff;border-radius:24px;box-shadow:0 30px 80px rgba(15,20,40,.34),0 2px 8px rgba(0,0,0,.08);overflow:hidden;animation:cardIn .36s cubic-bezier(.2,.9,.3,1.2);text-align:center;position:relative}
+@keyframes cardIn{0%{transform:translateY(22px) scale(.92);opacity:0}60%{transform:translateY(-3px) scale(1.01);opacity:1}100%{transform:none;opacity:1}}
+.resume-card::before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#1a6dff,#3b82f6,#22c55e)}
+.resume-card .rc-top{padding:32px 26px 8px;background:radial-gradient(120% 100% at 50% 0%,#eaf3ff 0%,#fff 70%)}
+.resume-card .rc-emoji{font-size:46px;line-height:1;display:inline-block;filter:drop-shadow(0 6px 14px rgba(26,109,255,.22));animation:emojiPop .5s cubic-bezier(.2,.9,.3,1.4) .1s both}
+@keyframes emojiPop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+.resume-card .rc-title{font-size:20px;font-weight:800;margin:14px 0 8px;color:var(--ink);letter-spacing:.3px}
+.resume-card .rc-desc{font-size:14px;color:var(--sub);line-height:1.8;padding:0 26px 24px}
+.resume-card .rc-desc b{color:#1a6dff;font-weight:800}
+.resume-card .rc-actions{display:flex;flex-direction:column;gap:10px;padding:0 26px 26px}
+.resume-card .rc-actions button{font-size:14.5px;font-weight:700;padding:13px 16px;border-radius:13px;cursor:pointer;border:1.5px solid var(--line);background:#fff;color:#4b5563;transition:all .16s}
+.resume-card .rc-actions .rc-primary{background:linear-gradient(135deg,#1a6dff,#3b82f6);border:none;color:#fff;font-weight:800;box-shadow:0 8px 22px rgba(26,109,255,.38)}
+.resume-card .rc-actions .rc-primary:hover{box-shadow:0 12px 28px rgba(26,109,255,.5);transform:translateY(-2px)}
+.resume-card .rc-actions button:hover:not(.rc-primary){border-color:#1a6dff;color:#1a6dff;background:#f7faff;transform:translateY(-1px)}
+.resume-card.finished::before{background:linear-gradient(90deg,#16a34a,#22c55e,#34d17a)}
+.resume-card.finished .rc-top{background:radial-gradient(120% 100% at 50% 0%,#e8faf0 0%,#fff 70%)}
+.resume-card.finished .rc-emoji{filter:drop-shadow(0 6px 16px rgba(22,163,74,.32))}
+.resume-card.finished .rc-actions .rc-primary{background:linear-gradient(135deg,#16a34a,#22c55e);box-shadow:0 8px 22px rgba(22,163,74,.4)}
+.resume-card.ask-card .rc-desc b{color:#d9480f;font-weight:800}
+.resume-card.warn::before{background:linear-gradient(90deg,#d97706,#f59e0b,#fbbf24)}
+.resume-card.warn .rc-top{background:radial-gradient(120% 100% at 50% 0%,#fff6e8 0%,#fff 70%)}
+.resume-card.warn .rc-emoji{filter:drop-shadow(0 6px 16px rgba(217,119,6,.3))}
+.resume-card.warn .rc-actions .rc-primary{background:linear-gradient(135deg,#d97706,#f59e0b);box-shadow:0 8px 22px rgba(217,119,6,.4)}
+.resume-card .rc-actions button:focus-visible{outline:3px solid rgba(26,109,255,.3);outline-offset:2px}
+@media (max-width:900px){:root{--frame-h:68vh}}
+@media (max-width:720px){
+:root{--frame-h:66vh;--radius:12px;--topbar-h:50px}
+.topbar{padding:0 12px;padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+.topbar .brand{font-size:14px}
+.topbar .nav{max-width:56%}
+.topbar .nav a{font-size:12px;padding:5px 11px}
+.wrap{width:calc(100% - 20px)}
+.hero{padding:16px}.hero h1{font-size:17px}.hero p{font-size:12px}
+.sh{padding:12px 14px 12px 13px;gap:10px;flex-wrap:wrap;border-left-width:4px}
+.sh .title{font-size:14px;white-space:normal}
+.sh .src{white-space:normal;overflow:visible;text-overflow:clip}
+.scroll-note{font-size:11px;padding:6px 10px}
+.frame-wrap iframe{min-height:380px}
+.sfoot{padding:7px 13px}
+
+}
+@media (max-width:400px){:root{--frame-h:64vh}}
+@media (max-height:480px) and (orientation:landscape){:root{--frame-h:92vh}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">📋 测试1553</div>
+</div>
+<div class="progress" id="progressBar" style="display:none">
+  <span class="ptext" id="progressText">0/0</span>
+  <span class="psegs" id="progressSegs"></span>
+</div>
+<div class="wrap">
+  <div class="card hero">
+    <h1>测试1553</h1>
+    <p>❗请依次填写✒️、分别提交📤
+❗本网页仅用于聚合问卷，不收集任何数据。</p>
+  </div>
+  <div class="resume-tip" id="resumeTip">
+    <span id="resumeText"></span>
+    <span class="sp"></span>
+    <button onclick="resumeScroll()">继续上次位置</button>
+    <button onclick="resetProgress()">重新开始</button>
+  </div>
+  <div class="resume-mask" id="resumeMask">
+    <div class="resume-card">
+      <div class="rc-top"><div class="rc-emoji">👋</div><div class="rc-title">欢迎回来</div></div>
+      <div class="rc-desc" id="resumeDesc"></div>
+      <div class="rc-actions">
+        <button class="rc-primary" onclick="resumeScroll()">继续上次位置</button>
+        <button onclick="resetProgress()">重新开始</button>
+        <button onclick="closeResume()">不用了，从顶部开始</button>
+      </div>
+    </div>
+  </div>
+  <div class="resume-mask" id="askMask">
+    <div class="resume-card ask-card" id="askCard">
+      <div class="rc-top"><div class="rc-emoji" id="askEmoji">❓</div><div class="rc-title" id="askTitle">请确认</div></div>
+      <div class="rc-desc" id="askDesc"></div>
+      <div class="rc-actions">
+        <button class="rc-primary" id="askOk" onclick="askOk()">确定</button>
+        <button id="askCancel" onclick="askCancel()">取消</button>
+      </div>
+    </div>
+  </div>
+  <div class="card overview">
+    <div class="ov-head"><span class="t">问卷清单</span><span class="c">4 份</span><span class="sp"></span><span style="font-size:12px;color:var(--mute)"></span></div>
+    <div class="ov-list"><div class="ov-item">
+        <span class="idx">1</span>
+        <span class="info"><span class="tt">问卷 1</span><span class="uu">https://pkunsd.wjx.cn/vm/hsY1CH6.aspx</span></span>
+      </div><div class="ov-item">
+        <span class="idx">2</span>
+        <span class="info"><span class="tt">问卷 2</span><span class="uu">https://pkunsd.wjx.cn/vm/hsY1CH6.aspx</span></span>
+      </div><div class="ov-item">
+        <span class="idx">3</span>
+        <span class="info"><span class="tt">问卷 3</span><span class="uu">https://pkunsd.wjx.cn/vm/hsY1CH6.aspx</span></span>
+      </div><div class="ov-item">
+        <span class="idx">4</span>
+        <span class="info"><span class="tt">问卷 4</span><span class="uu">https://pkunsd.wjx.cn/vm/hsY1CH6.aspx</span></span>
+      </div></div>
+  </div>
+  <div>
+      <section class="survey-block" id="s0">
+        <div class="sh">
+          <div class="num">1</div>
+          <div class="meta"><div class="title">问卷 1</div><div class="src"></div></div>
+        </div>
+        <div class="scroll-note">👆 框内可上下滑动查看题目 ↓ 滑到框外继续看下一份问卷</div>
+        <div class="frame-wrap">
+          <iframe title="问卷 1" src="https://pkunsd.wjx.cn/vm/hsY1CH6.aspx" loading="lazy" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="fallback">⚠️ 这份《问卷 1》未能在此页面内显示（该平台可能禁止被嵌入）。</div>
+        </div>
+        <div class="submit-alert"><span class="sa-ico">⚠️</span><span class="sa-txt">填完后，请务必点击<b>问卷里的「提交」按钮</b></span></div>
+        <div class="sfoot">
+          <button class="btn sm done-btn" onclick="toggleDone(0)">✓ 我已提交这份</button>
+        </div>
+      </section>
+      <section class="survey-block" id="s1">
+        <div class="sh">
+          <div class="num">2</div>
+          <div class="meta"><div class="title">问卷 2</div><div class="src"></div></div>
+        </div>
+        <div class="scroll-note">👆 框内可上下滑动查看题目 ↓ 滑到框外继续看下一份问卷</div>
+        <div class="frame-wrap">
+          <iframe title="问卷 2" src="https://pkunsd.wjx.cn/vm/hsY1CH6.aspx" loading="lazy" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="fallback">⚠️ 这份《问卷 2》未能在此页面内显示（该平台可能禁止被嵌入）。</div>
+        </div>
+        <div class="submit-alert"><span class="sa-ico">⚠️</span><span class="sa-txt">填完后，请务必点击<b>问卷里的「提交」按钮</b></span></div>
+        <div class="sfoot">
+          <button class="btn sm done-btn" onclick="toggleDone(1)">✓ 我已提交这份</button>
+        </div>
+      </section>
+      <section class="survey-block" id="s2">
+        <div class="sh">
+          <div class="num">3</div>
+          <div class="meta"><div class="title">问卷 3</div><div class="src"></div></div>
+        </div>
+        <div class="scroll-note">👆 框内可上下滑动查看题目 ↓ 滑到框外继续看下一份问卷</div>
+        <div class="frame-wrap">
+          <iframe title="问卷 3" src="https://pkunsd.wjx.cn/vm/hsY1CH6.aspx" loading="lazy" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="fallback">⚠️ 这份《问卷 3》未能在此页面内显示（该平台可能禁止被嵌入）。</div>
+        </div>
+        <div class="submit-alert"><span class="sa-ico">⚠️</span><span class="sa-txt">填完后，请务必点击<b>问卷里的「提交」按钮</b></span></div>
+        <div class="sfoot">
+          <button class="btn sm done-btn" onclick="toggleDone(2)">✓ 我已提交这份</button>
+        </div>
+      </section>
+      <section class="survey-block" id="s3">
+        <div class="sh">
+          <div class="num">4</div>
+          <div class="meta"><div class="title">问卷 4</div><div class="src"></div></div>
+        </div>
+        <div class="scroll-note">👆 框内可上下滑动查看题目 ↓ 滑到框外继续看下一份问卷</div>
+        <div class="frame-wrap">
+          <iframe title="问卷 4" src="https://pkunsd.wjx.cn/vm/hsY1CH6.aspx" loading="lazy" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="fallback">⚠️ 这份《问卷 4》未能在此页面内显示（该平台可能禁止被嵌入）。</div>
+        </div>
+        <div class="submit-alert"><span class="sa-ico">⚠️</span><span class="sa-txt">填完后，请务必点击<b>问卷里的「提交」按钮</b></span></div>
+        <div class="sfoot">
+          <button class="btn sm done-btn" onclick="toggleDone(3)">✓ 我已提交这份</button>
+        </div>
+      </section></div>
+  <div class="finish-box" id="finishBox">
+    <div class="fb-badge">✨ 最后一步</div>
+    <div class="fb-title">🎉 全部填完了？</div>
+    <div class="fb-desc" id="finishDesc">请确认你已逐份点击每份问卷里的「提交」，然后点下方按钮结束。</div>
+    <button class="fb-btn" id="finishBtn" onclick="finishAll()">✓ 我已填写并提交所有问卷</button>
+    <div class="fb-tip">💡 点击确认后会自动关闭本页</div>
+  </div>
+  <footer style="text-align:center;font-size:12px;color:var(--mute);line-height:1.8;margin:12px 0 48px">本页面仅展示问卷，不收集任何数据。</footer>
+</div>
+<script>
+function celebrate(){try{var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;var cv=document.createElement("canvas");cv.id="__fw";cv.style.cssText="position:fixed;left:0;top:0;width:100vw;height:100vh;pointer-events:none;z-index:9999";document.body.appendChild(cv);var ctx=cv.getContext("2d");var dpr=Math.min(window.devicePixelRatio||1,2);var W=window.innerWidth,H=window.innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);var colors=["#ff5f6d","#ffd166","#1a6dff","#3bb56b","#a855f7","#f59e0b","#22d3ee","#ff8ac0","#ffffff"];var parts=[],rockets=[],bursts=reduce?1:5,launched=0;function launch(){var x=W*(0.18+Math.random()*0.64),ty=H*(0.16+Math.random()*0.26);rockets.push({x:x,y:H*0.86,ty:ty,vy:-(H*0.014+Math.random()*3.4),color:colors[Math.floor(Math.random()*colors.length)]})}function burst(x,y,color){var n=90+Math.floor(Math.random()*50);for(var i=0;i<n;i++){var a=Math.PI*2*i/n+(Math.random()-0.5)*0.12,sp=2.4+Math.random()*6.4;parts.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,decay:0.010+Math.random()*0.012,color:(i%7===0?"#ffffff":color),size:2+Math.random()*2.4})}for(var k=0;k<3;k++)parts.push({x:x,y:y,vx:0,vy:0,life:1,decay:0.05,color:"#ffffff",size:4})}var start=performance.now(),DURATION=reduce?800:3000,nextLaunch=0;function frame(now){var t=now-start;ctx.clearRect(0,0,W,H);if(launched<bursts&&t>nextLaunch){launch();launched++;nextLaunch+=(DURATION-700)/bursts}for(var i=rockets.length-1;i>=0;i--){var r=rockets[i];r.y+=r.vy;ctx.globalAlpha=1;ctx.fillStyle=r.color;ctx.shadowColor=r.color;ctx.shadowBlur=8;ctx.beginPath();ctx.arc(r.x,r.y,2.6,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;if(r.y<=r.ty){burst(r.x,r.y,r.color);rockets.splice(i,1)}}for(var j=parts.length-1;j>=0;j--){var p2=parts[j];p2.x+=p2.vx;p2.y+=p2.vy;p2.vy+=0.05;p2.vx*=0.982;p2.vy*=0.982;p2.life-=p2.decay;if(p2.life<=0){parts.splice(j,1);continue}ctx.globalAlpha=Math.max(0,p2.life);ctx.fillStyle=p2.color;ctx.shadowColor=p2.color;ctx.shadowBlur=10;ctx.beginPath();ctx.arc(p2.x,p2.y,p2.size,0,Math.PI*2);ctx.fill()}ctx.globalAlpha=1;ctx.shadowBlur=0;if(t<DURATION||parts.length){requestAnimationFrame(frame)}else{cv.remove()}}requestAnimationFrame(frame);window.addEventListener("resize",function(){W=window.innerWidth;H=window.innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)})}catch(e){}}
+var TOTAL=4;
+var PKEY="survey_hub_prog_"+(function(){var s="";document.querySelectorAll(".survey-block iframe").forEach(function(f){s+=f.getAttribute("src")+"|"});var h=5381;for(var i=0;i<s.length;i++){h=((h<<5)+h+s.charCodeAt(i))|0}return Math.abs(h).toString(36)})();
+function loadP(){try{var raw=localStorage.getItem(PKEY);if(!raw)return null;var p=JSON.parse(raw);return p&&p.fp===PKEY?p:null}catch(e){return null}}
+function saveP(p){try{p=p||{};p.fp=PKEY;p.ts=Date.now();localStorage.setItem(PKEY,JSON.stringify(p))}catch(e){}}
+function doneSet(){var p=loadP();return new Set((p&&p.done)||[])}
+function toggleDone(i){var p=loadP()||{};var d=new Set(p.done||[]);if(d.has(i)){d.delete(i);_saveDone(i,d,"已取消标记")}else{askModal({emoji:"⚠️",title:"提交确认",warn:true,desc:"请确认：你已经点击了问卷里的 <b>「提交」</b> 按钮？<br>若还没提交，请先回到上面的问卷，拉到最底部点提交。",okText:"✓ 已提交，标记完成",cancelText:"还没提交"}).then(function(ok){if(ok){var dd=new Set((loadP()||{}).done||[]);dd.add(i);_saveDone(i,dd,"已标记为已提交 ✓")}})}}
+function _saveDone(i,d,msg){var p=loadP()||{};var wasDone=new Set((loadP()||{}).done||[]).has(i);p.done=[...(d||new Set(p.done||[]))];if(p.lastIndex==null)p.lastIndex=i;saveP(p);applyDone();updateProgress();if(!wasDone&&d&&d.has(i))celebrate();if(msg&&typeof toast==="function")toast(msg)}
+function _md(i,d){var p=loadP()||{};d=d||new Set(p.done||[]);d.add(i);p.done=[...d];if(p.lastIndex==null)p.lastIndex=i;saveP(p);applyDone();updateProgress()}
+function applyDone(){var ds=doneSet();document.querySelectorAll(".survey-block").forEach(function(b,i){var d=ds.has(i);b.classList.toggle("done",d);var bt=b.querySelector(".done-btn");if(bt)bt.textContent=d?"✓ 已提交（点击取消）":"✓ 我已提交这份"})}
+function updateProgress(){var bar=document.getElementById("progressBar");if(!TOTAL){bar.style.display="none";return}bar.style.display="flex";var ds=doneSet();var n=[...ds].filter(function(i){return i>=0&&i<TOTAL}).length;document.getElementById("progressText").innerHTML="<b>"+n+"</b> / "+TOTAL;var segs=document.getElementById("progressSegs");if(segs.children.length!==TOTAL){segs.innerHTML="";for(var i=0;i<TOTAL;i++){var d=document.createElement("div");d.className="seg";d.textContent=(i+1);segs.appendChild(d)}}[...segs.children].forEach(function(el,i){el.classList.toggle("on",ds.has(i))});bar.classList.toggle("all-done",n===TOTAL&&TOTAL>0);updateFinUI(n)}
+var st=null;
+function onScroll(){if(st)return;st=setTimeout(function(){st=null;var bs=[...document.querySelectorAll(".survey-block")];if(!bs.length)return;var th=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--topbar-h'))||56;var cur=0,md=1e9;bs.forEach(function(b,i){var dd=Math.abs(b.getBoundingClientRect().top-th-60);if(dd<md){md=dd;cur=i}});var p=loadP()||{};p.lastIndex=cur;p.scrollY=window.scrollY;saveP(p)},400)}
+function resumeScroll(){var p=loadP();closeResume();if(!p)return;document.getElementById("resumeTip").classList.remove("show");var el=document.getElementById("s"+(p.lastIndex||0));var sc=p.scrollY||0;if(p.lastIndex>0&&el){setTimeout(function(){el.scrollIntoView({block:"start",behavior:"smooth"})},60)}else if(sc>200){window.scrollTo({top:sc,behavior:"smooth"})}else if(el){el.scrollIntoView({block:"start",behavior:"smooth"})}}
+function closeResume(){document.getElementById("resumeMask").classList.remove("show")}
+var askResolver=null;
+function askModal(o){o=o||{};return new Promise(function(res){askResolver=res;var card=document.getElementById("askCard");document.getElementById("askEmoji").textContent=o.emoji||"❓";document.getElementById("askTitle").textContent=o.title||"请确认";document.getElementById("askDesc").innerHTML=o.desc||"";var ok=document.getElementById("askOk");var ca=document.getElementById("askCancel");ok.textContent=o.okText||"确定";ca.textContent=o.cancelText||"取消";ca.style.display=(o.cancelText===null)?"none":"";card.classList.toggle("finished",!!o.green);card.classList.toggle("warn",!!o.warn);document.getElementById("askMask").classList.add("show")})}
+function _askClose(v){document.getElementById("askMask").classList.remove("show");var r=askResolver;askResolver=null;if(r)r(v)}
+function askOk(){_askClose(true)}
+function askCancel(){_askClose(false)}
+function resetProgress(){askModal({emoji:"🔄",title:"重新开始",warn:true,desc:"确定重新开始吗？将清除本页记录的填写进度。<br><span style='color:#6b7280;font-size:13px'>（不影响已提交到各平台的问卷）</span>",okText:"确定重置",cancelText:"取消"}).then(function(ok){if(!ok)return;try{localStorage.removeItem(PKEY)}catch(e){}applyDone();updateProgress();document.getElementById("resumeTip").classList.remove("show");closeResume();window.scrollTo({top:0,behavior:"smooth"})})}
+function showResume(){var p=loadP();var mask=document.getElementById("resumeMask");if(!p){mask.classList.remove("show");return}if(p.finished){var card=mask.querySelector(".resume-card");var em=mask.querySelector(".rc-emoji");var ti=mask.querySelector(".rc-title");var ac=mask.querySelector(".rc-actions");if(em)em.textContent="✅";if(ti)ti.textContent="你已完成过本页";document.getElementById("resumeDesc").innerHTML="你已经填写并提交过本次全部 <b>"+TOTAL+"</b> 份问卷，<br>不用重复填写。感谢你的参与！";if(ac)ac.innerHTML='<button class="rc-primary" onclick="closeResume()">知道了</button>';if(card)card.classList.add("finished");mask.classList.add("show");return}
+var n=[...doneSet()].filter(function(i){return i>=0&&i<TOTAL}).length;var idx=(p.lastIndex!=null?p.lastIndex:0);var sc=(p.scrollY||0);
+// 只有“真正有进度”才弹：至少标记过一份，或已滚动过第一屏
+if(!(n>0 || idx>0 || sc>200)){mask.classList.remove("show");return}
+var desc;(n>=TOTAL&&TOTAL>0)?desc="你已标记完成全部 <b>"+TOTAL+"</b> 份问卷 🎉<br>需要回到上次的位置吗？":desc="你上次填到第 <b>"+(idx+1)+"</b> 份，已完成 <b>"+n+"/"+TOTAL+"</b> 份。<br>需要从上次的位置继续吗？";document.getElementById("resumeDesc").innerHTML=desc;mask.classList.add("show")}
+function finishAll(){var ds=doneSet();var n=[...ds].filter(function(i){return i>=0&&i<TOTAL}).length;if(n<TOTAL){askModal({emoji:"🤔",title:"还没全部完成",warn:true,desc:"你还有 <b>"+(TOTAL-n)+"</b> 份问卷没有标记为已提交。<br>确定要现在结束吗？",okText:"仍要结束",cancelText:"继续填写"}).then(function(ok){if(ok)_df()})}else{askModal({emoji:"🎉",title:"最后确认",green:true,desc:"请确认：你已逐份点击每份问卷里的 <b>「提交」</b> 按钮，全部填写完毕？<br>点击确认后将自动关闭本页。",okText:"✓ 确认，提交完成",cancelText:"再检查一下"}).then(function(ok){if(ok)_df()})}}
+function _df(){var p=loadP()||{};p.finished=true;p.finishedAt=Date.now();saveP(p);var tip=document.createElement("div");tip.className="finish-toast";tip.innerHTML="✓ 已记录，感谢填写！本页即将自动关闭…";document.body.appendChild(tip);setTimeout(function(){try{window.open('','_self');window.close()}catch(e){}setTimeout(function(){tip.innerHTML="✓ 已全部完成，感谢填写！<br><span style='font-size:12px;opacity:.85'>若本页没有自动关闭，请手动关闭此标签页。</span>"},500)},1200)}
+function updateFinUI(n){var box=document.getElementById("finishBox");if(!box)return;if(!TOTAL){box.style.display="none";return}box.style.display="";var all=n>=TOTAL;box.classList.toggle("all-done",all);var btn=document.getElementById("finishBtn");var desc=document.getElementById("finishDesc");var title=box.querySelector(".fb-title");var badge=box.querySelector(".fb-badge");var tip=box.querySelector(".fb-tip");if(all){if(btn)btn.className="fb-btn";if(title)title.textContent="🎉 所有问卷都填完啦！";if(badge)badge.textContent="✅ 可以收尾了";if(desc)desc.textContent="确认全部提交后，点下方按钮结束本页。";if(tip)tip.textContent="💡 点击确认后会自动关闭本页"}else{if(btn)btn.className="fb-btn waiting";if(title)title.textContent="🎉 全部填完了？";if(badge)badge.textContent="✨ 最后一步";if(desc)desc.textContent="还剩 "+(TOTAL-n)+" 份未标记完成。请逐份点击问卷里的「提交」，并点上面的「我已提交这份」。";if(tip)tip.textContent="💡 全部标记完成后，此处按钮才可点"}}
+function toggleExpand(btn){}
+/* 可调：每份问卷 iframe 显示高度（px） */
+var IFRAME_HEIGHT=200;
+document.documentElement.style.setProperty('--iframe-h',IFRAME_HEIGHT+'px');
+document.querySelectorAll(".frame-wrap iframe").forEach(function(f){f.addEventListener("load",function(){var blocked=false;try{if(f.contentDocument&&f.contentDocument.location.href==="about:blank")blocked=true}catch(e){}var fb=f.parentElement.querySelector(".fallback");if(blocked&&fb){f.style.display="none";fb.style.display="block"}})});
+window.addEventListener("scroll",onScroll,{passive:true});
+window.addEventListener("beforeunload",function(){var bs=[...document.querySelectorAll(".survey-block")];if(!bs.length)return;var th=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--topbar-h'))||56;var cur=0,md=1e9;bs.forEach(function(b,i){var dd=Math.abs(b.getBoundingClientRect().top-th-60);if(dd<md){md=dd;cur=i}});var p=loadP()||{};p.lastIndex=cur;p.scrollY=window.scrollY;saveP(p)});
+applyDone();updateProgress();showResume();
+(function(){window.addEventListener("load",function(){var blocks=document.querySelectorAll(".survey-block");if(!("IntersectionObserver" in window)||!blocks.length)return;var links=document.querySelectorAll(".topbar .nav a");var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;var id=en.target.id;links.forEach(function(a){a.classList.toggle("active",a.getAttribute("href")==="#"+id)})})},{rootMargin:"-40% 0px -50% 0px",threshold:0});blocks.forEach(function(b){io.observe(b)})})})();
+</script>
+</body>
+</html>
